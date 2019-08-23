@@ -6,10 +6,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div align=center id="root">
+      <h1>Cifra de César!</h1>
+
+      <p>Digite seu texto: <br> <input type="text" id="string"></p>
+
+      <p>Informe o valor do deslocamento: <br><input type="number" id="offset">
+      <input type="button" value="Codficar" onclick="clique()"/>
+
+      <p id="msgCodificada"></p>
+
+      <p>Digite seu texto: <br> <input type="text" id="stringDecode"></p>
+
+      <p>Informe o valor do deslocamento: <br><input type="number" id="offsetDecode">
+
+      <input type="button" value="Decodificar" onclick="cliqueDecode()"/> 
+
+      <p id="msgDecodificada"></p>
+
+    
+      </p> 
+      
+            
+
     </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
