@@ -1,0 +1,37 @@
+html{
+    background-color: rgb(66, 5, 49);
+    color: aliceblue;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    text-align: center;
+    
+}
+
+.topo{
+    background-color: black;
+    margin: 20px;
+    color: rgb(5, 143, 143);
+    border: 5px solid;
+    border-radius: 25px;
+    width: 50%; 
+}
+
+.codificar{
+    background-color: black;
+    margin: 20px;
+    color: aqua;
+    border: 5px solid;
+    width: 50%;
+    display: inline-block;
+}
+
+.decodificar{
+    background-color: black;
+    margin: 20px;
+    color: aqua;
+    border: 5px solid;
+    width: 50%;
+
+}

@@ -3,33 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div align=center id="root">
-      <h1>Cifra de César!</h1>
+    <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
 
-      <p>Digite seu texto: <br> <input type="text" id="string"></p>
+      <section class="topo">
+      <h1>Cifra de César!</h1>
+      </section>
+
+      <section>
+        texto sobre
+      </section>
+
+      <section class="codificar">
+      <div>
+
+    <p>Digite aqui o texto: <br> <input type="text" id="string"></p>
 
       <p>Informe o valor do deslocamento: <br><input type="number" id="offset">
-      <input type="button" value="Codficar" onclick="clique()"/>
+      <input type="button" value="Codficar" id="cliqueCode"/>
 
       <p id="msgCodificada"></p>
+    </div>  
+    </section>   
 
+      <section class="decodificar">
+      <div id="decode" >
       <p>Digite seu texto: <br> <input type="text" id="stringDecode"></p>
 
       <p>Informe o valor do deslocamento: <br><input type="number" id="offsetDecode">
 
-      <input type="button" value="Decodificar" onclick="cliqueDecode()"/> 
+      <input type="button" value="Decodificar" id ="cliqueDecode" /> 
 
       <p id="msgDecodificada"></p>
 
-    
-      </p> 
-      
-            
-
+      </p>     
     </div>
+    </section>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
