@@ -2,7 +2,7 @@ window.cipher = {
   encode: encode,
   decode: decode
 };
-          
+  
 function encode(offset, string) {
   let textoCodificado = [];
   let size = string.length;   
