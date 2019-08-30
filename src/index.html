@@ -2,45 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Baita Coin</title>
     <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
 
       <section class="topo">
-      <h1>Cifra de César!</h1>
+          <h1> Baita Coin $</h1>
       </section>
 
-      <section>
-        texto sobre
+      <section class="text">
+          A codificação (e também a decodificação), resulta em transformar a senha em código, e está diretamente relacionada com proteção das informações. Nós da BAITA COIN, estamos sempre antenados com a tecnologia e com a segurança digital e aqui ela está em primeiro lugar.
       </section>
 
       <section class="codificar">
       <div>
+        <h2>Codificar</h2>
 
     <p>Digite aqui o texto: <br> <input type="text" id="string"></p>
 
       <p>Informe o valor do deslocamento: <br><input type="number" id="offset">
       <input type="button" value="Codficar" id="cliqueCode"/>
 
-      <p id="msgCodificada"></p>
+      
     </div>  
     </section>   
-
+    
       <section class="decodificar">
       <div id="decode" >
-      <p>Digite seu texto: <br> <input type="text" id="stringDecode"></p>
+
+        <h2>Decodificar</h2>
+      <p>Digite aqui o texto: <br> <input type="text" id="stringDecode"></p>
 
       <p>Informe o valor do deslocamento: <br><input type="number" id="offsetDecode">
 
       <input type="button" value="Decodificar" id ="cliqueDecode" /> 
 
-      <p id="msgDecodificada"></p>
+      
 
       </p>     
     </div>
     </section>
-
+    <p class="msgok" id="msgCodificada"></p>
+    <p class="msgok" id="msgDecodificada"></p>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 
