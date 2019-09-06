@@ -15,7 +15,7 @@ function encode(offset, string) {
   let size = string.length;   
   let offNegativo = offsetNegativo(offset);
   for (let i = 0; i <size; i++) {
-    const transformAsc = string[i].charCodeAt(0);
+    const transformAsc = string.charCodeAt(i);
     if (transformAsc >= 65 && transformAsc <= 90) {
       const numerador =((transformAsc - 65 + offNegativo) % 26) + 65;
       const sCharCode = String.fromCharCode(numerador);
@@ -36,7 +36,7 @@ function decode(offset, string) {
   let size = string.length;
   let offNegativoDecode = offsetNegativo(offset);
   for (let i = 0; i <size; i++) {
-    const transformAsc = string[i].charCodeAt(0);
+    const transformAsc = string.charCodeAt(i);
     if (transformAsc >= 65 && transformAsc <= 90) {
       const numerador =((transformAsc - 90 - offNegativoDecode) % 26) + 90;
       const sCharCode = String.fromCharCode(numerador);
@@ -46,7 +46,7 @@ function decode(offset, string) {
       const sCharCode = String.fromCharCode(numerador);
       textoCodificado.push(sCharCode);
     } else {
-      string.push(string(i));
+      textoCodificado.push(string(i));
     }
   }
   return textoCodificado.join("");  
