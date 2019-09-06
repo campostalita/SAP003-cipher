@@ -4,7 +4,7 @@ window.cipher = {
 };
 
 function offsetNegativo(offset) {
-  while (offset < 0){
+  while (offset < 0) {
     return offset +=26;
   }
   return offset;
